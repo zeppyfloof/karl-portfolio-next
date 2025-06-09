@@ -107,7 +107,7 @@ export default function Home() {
             <div className="bg-gradient-to-br from-green-500 to-teal-600 p-6 rounded-lg shadow-md border border-gray-200 flex flex-col items-center text-white animate-fade-in hover:scale-105 transition-transform duration-300">
               <h3 className="text-xl font-bold mb-2 text-center">ManPro Biometrics</h3>
               <Image
-                src="/logos/logo4.png" // Ensure this logo file exists in public/logos/
+                src="/logos/manpro.png"
                 alt="ManPro Biometrics Logo"
                 width={60}
                 height={60}
@@ -147,22 +147,25 @@ export default function Home() {
           <h2 className="text-2xl font-semibold mb-4">Certificates</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="p-4 bg-gray-50 rounded-lg shadow hover:shadow-lg transition-shadow">
-              <Image src="/certificates/1.png" alt="Certificate 1" width={200} height={150} className="mx-auto" />
+              <Image src="/certificates/1.png" alt="Certificate 1" width={300} height={225} className="mx-auto" />
             </div>
             <div className="p-4 bg-gray-50 rounded-lg shadow hover:shadow-lg transition-shadow">
-              <Image src="/certificates/2.png" alt="Certificate 2" width={200} height={150} className="mx-auto" />
+              <Image src="/certificates/2.png" alt="Certificate 2" width={300} height={225} className="mx-auto" />
             </div>
             <div className="p-4 bg-gray-50 rounded-lg shadow hover:shadow-lg transition-shadow">
-              <Image src="/certificates/3.png" alt="Certificate 3" width={200} height={150} className="mx-auto" />
+              <Image src="/certificates/3.png" alt="Certificate 3" width={300} height={225} className="mx-auto" />
             </div>
             <div className="p-4 bg-gray-50 rounded-lg shadow hover:shadow-lg transition-shadow">
-              <Image src="/certificates/4.png" alt="Certificate 4" width={200} height={150} className="mx-auto" />
+              <Image src="/certificates/4.png" alt="Certificate 4" width={300} height={225} className="mx-auto" />
             </div>
             <div className="p-4 bg-gray-50 rounded-lg shadow hover:shadow-lg transition-shadow">
-              <Image src="/certificates/5.png" alt="Certificate 5" width={200} height={150} className="mx-auto" />
+              <Image src="/certificates/5.png" alt="Certificate 5" width={300} height={225} className="mx-auto" />
             </div>
             <div className="p-4 bg-gray-50 rounded-lg shadow hover:shadow-lg transition-shadow">
-              <Image src="/certificates/6.png" alt="Certificate 6" width={200} height={150} className="mx-auto" />
+              <Image src="/certificates/6.png" alt="Certificate 6" width={300} height={225} className="mx-auto" />
+            </div>
+            <div className="p-4 bg-gray-50 rounded-lg shadow hover:shadow-lg transition-shadow">
+              <Image src="/certificates/7.png" alt="Certificate 7" width={300} height={225} className="mx-auto" />
             </div>
           </div>
         </div>
