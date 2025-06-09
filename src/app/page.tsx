@@ -1,6 +1,31 @@
+'use client'; // This directive ensures the component is rendered on the client side
+
+import { useEffect } from 'react';
 import Image from 'next/image';
 
 export default function Home() {
+  useEffect(() => {
+    const handleNavigation = (e: Event) => {
+      e.preventDefault();
+      const target = e.target as HTMLAnchorElement;
+      const href = target.getAttribute('href');
+      if (href && href.startsWith('#')) {
+        const section = document.querySelector(href);
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    };
+
+    const links = document.querySelectorAll('nav a');
+    links.forEach(link => link.addEventListener('click', handleNavigation));
+
+    // Cleanup event listeners on unmount
+    return () => {
+      links.forEach(link => link.removeEventListener('click', handleNavigation));
+    };
+  }, []);
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-100 via-purple-200 to-indigo-200 text-gray-800 font-sans">
       {/* Header */}
@@ -88,14 +113,14 @@ export default function Home() {
               <span className="font-medium">Yahoo:</span>
               <a href="mailto:estiponakarl@yahoo.com" className="text-blue-600 hover:underline">estiponakarl@yahoo.com</a>
               <a href="https://mail.yahoo.com/" target="_blank" rel="noopener noreferrer">
-                <Image src="/logos/yahoo.png" alt="yahoo" width={24} height={24} />
+                <Image src="/logos/yahoo.png" alt="Yahoo" width={24} height={24} />
               </a>
             </p>
             <p className="flex items-center space-x-2">
               <span className="font-medium">GitHub:</span>
               <a href="https://github.com/zeppyfloof" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">zeppyfloof</a>
               <a href="https://github.com/zeppyfloof" target="_blank" rel="noopener noreferrer">
-                <Image src="/logos/github.png" alt="github" width={24} height={24} />
+                <Image src="/logos/github.png" alt="GitHub" width={24} height={24} />
               </a>
             </p>
           </div>
