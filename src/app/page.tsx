@@ -65,7 +65,7 @@ export default function Home() {
       <section id="projects" className="py-12 px-6 max-w-4xl mx-auto">
         <div className="bg-white p-6 rounded-lg shadow-md">
           <h2 className="text-2xl font-semibold mb-6">Projects</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 justify-center">
             <div className="bg-gradient-to-br from-indigo-500 to-purple-600 p-6 rounded-lg shadow-md border border-gray-200 flex flex-col items-center text-white animate-fade-in hover:scale-105 transition-transform duration-300">
               <h3 className="text-xl font-bold mb-2 text-center">MediFind</h3>
               <Image
@@ -102,6 +102,23 @@ export default function Home() {
                 <span className="inline-block bg-green-500 text-white text-xs font-medium px-2.5 py-0.5 rounded">C#</span>
                 <span className="inline-block bg-green-500 text-white text-xs font-medium px-2.5 py-0.5 rounded">SQL</span>
                 <span className="inline-block bg-green-500 text-white text-xs font-medium px-2.5 py-0.5 rounded">Console App</span>
+              </div>
+            </div>
+            <div className="bg-gradient-to-br from-green-500 to-teal-600 p-6 rounded-lg shadow-md border border-gray-200 flex flex-col items-center text-white animate-fade-in hover:scale-105 transition-transform duration-300">
+              <h3 className="text-xl font-bold mb-2 text-center">ManPro Biometrics</h3>
+              <Image
+                src="/logos/logo4.png" // Ensure this logo file exists in public/logos/
+                alt="ManPro Biometrics Logo"
+                width={60}
+                height={60}
+                className="mb-4 rounded-full"
+              />
+              <p className="text-white mb-4 text-center">
+                A console app that stores and pushes employee&apos;s login attendance with the use of biometric device.
+              </p>
+              <div className="flex flex-wrap gap-2 justify-center">
+                <span className="inline-block bg-green-500 text-white text-xs font-medium px-2.5 py-0.5 rounded">C#</span>
+                <span className="inline-block bg-green-500 text-white text-xs font-medium px-2.5 py-0.5 rounded">PHP</span>
               </div>
             </div>
           </div>
