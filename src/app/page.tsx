@@ -64,7 +64,7 @@ export default function Home() {
       <section id="projects" className="py-12 px-6 max-w-4xl mx-auto">
         <div className="bg-white p-6 rounded-lg shadow-md">
           <h2 className="text-2xl font-semibold mb-6">Projects</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center">
             <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
               <h3 className="text-xl font-bold mb-2">MediFind</h3>
               <Image
