@@ -31,7 +31,7 @@ export default function Home() {
       {/* Header */}
       <header className="bg-gray-900 text-white p-6 text-center relative">
         <Image
-          src="/profile.jpg"
+          src="/profile.jpg" // Fixed to start with /
           alt="Karl Joseph Estipona"
           width={120}
           height={120}
@@ -91,14 +91,24 @@ export default function Home() {
       <section id="certificates" className="py-12 px-6 max-w-4xl mx-auto">
         <div className="bg-white p-6 rounded-lg shadow-md">
           <h2 className="text-2xl font-semibold mb-4">Certificates</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="p-4 bg-gray-50 rounded-lg shadow hover:shadow-lg transition-shadow">
-              <h3 className="text-xl font-medium">Certificate 1</h3>
-              <p className="text-gray-600">Details about your first certificate.</p>
+              <Image src="/certificates/1.png" alt="Certificate 1" width={200} height={150} className="mx-auto" />
             </div>
             <div className="p-4 bg-gray-50 rounded-lg shadow hover:shadow-lg transition-shadow">
-              <h3 className="text-xl font-medium">Certificate 2</h3>
-              <p className="text-gray-600">Details about your second certificate.</p>
+              <Image src="/certificates/2.png" alt="Certificate 2" width={200} height={150} className="mx-auto" />
+            </div>
+            <div className="p-4 bg-gray-50 rounded-lg shadow hover:shadow-lg transition-shadow">
+              <Image src="/certificates/3.png" alt="Certificate 3" width={200} height={150} className="mx-auto" />
+            </div>
+            <div className="p-4 bg-gray-50 rounded-lg shadow hover:shadow-lg transition-shadow">
+              <Image src="/certificates/4.png" alt="Certificate 4" width={200} height={150} className="mx-auto" />
+            </div>
+            <div className="p-4 bg-gray-50 rounded-lg shadow hover:shadow-lg transition-shadow">
+              <Image src="/certificates/5.png" alt="Certificate 5" width={200} height={150} className="mx-auto" />
+            </div>
+            <div className="p-4 bg-gray-50 rounded-lg shadow hover:shadow-lg transition-shadow">
+              <Image src="/certificates/6.png" alt="Certificate 6" width={200} height={150} className="mx-auto" />
             </div>
           </div>
         </div>
