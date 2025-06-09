@@ -32,16 +32,16 @@ export default function Home() {
       {/* Header */}
       <header className="bg-gray-900 text-white p-6 text-center relative">
         <Image
-          src="/profile.jpg"
+          src="/profile2.jpg"
           alt="Karl Joseph Estipona"
-          width={120}
-          height={120}
-          className="mx-auto rounded-full border-4 border-white shadow-lg object-cover"
+          width={200} // Increased to zoom in
+          height={200} // Increased to zoom in
+          className="mx-auto rounded-full border-4 border-white shadow-lg object-cover" // object-cover to crop and center
         />
         <h1 className="text-4xl font-bold mt-4">Karl Joseph Estipona</h1>
         <p className="mt-2 text-lg">Web Developer & Designer</p>
-        <nav className="absolute top-4 right-4">
-          <ul className="flex space-x-4">
+        <nav className="mt-6">
+          <ul className="flex justify-center space-x-4">
             <li><a href="#about" className="hover:text-indigo-300">About</a></li>
             <li><a href="#projects" className="hover:text-indigo-300">Projects</a></li>
             <li><a href="#skills" className="hover:text-indigo-300">Skills</a></li>
@@ -56,7 +56,7 @@ export default function Home() {
         <div className="bg-white p-6 rounded-lg shadow-md">
           <h2 className="text-2xl font-semibold mb-4">About Me</h2>
           <p className="text-gray-700 leading-relaxed">
-            Hi! I'm Karl Joseph, a web developer with experience in React.js, Next.js, Tailwind CSS and C# enthusiast. I enjoy building responsive and user-friendly websites, with a focus on innovative solutions like my MediFind project.
+            Hi! I&apos;m Karl Joseph, a web developer with experience in React.js, Next.js, Tailwind CSS and C# enthusiast. I enjoy building responsive and user-friendly websites, with a focus on innovative solutions like my MediFind project.
           </p>
         </div>
       </section>
