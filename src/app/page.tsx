@@ -31,11 +31,11 @@ export default function Home() {
       {/* Header */}
       <header className="bg-gray-900 text-white p-6 text-center relative">
         <Image
-          src="/profile.jpg" // Fixed to start with /
+          src="/profile.jpg"
           alt="Karl Joseph Estipona"
           width={120}
           height={120}
-          className="mx-auto rounded-full border-4 border-white shadow-lg"
+          className="mx-auto rounded-full border-4 border-white shadow-lg object-cover"
         />
         <h1 className="text-4xl font-bold mt-4">Karl Joseph Estipona</h1>
         <p className="mt-2 text-lg">Web Developer & Designer</p>
@@ -67,7 +67,31 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="p-4 bg-gray-50 rounded-lg shadow hover:shadow-lg transition-shadow">
               <h3 className="text-xl font-medium">MediFind</h3>
-              <p className="text-gray-600">A smart app that locates nearby pharmacies and checks medicine prices.</p>
+              <Image
+                src="/logos/logo2.png"
+                alt="MediFind Logo"
+                width={50}
+                height={50}
+                className="inline-block mr-2"
+                title="A smart app that locates nearby pharmacies and checks medicine prices."
+              />
+              <p className="text-gray-600 mt-2">
+                Technologies: JavaScript, SQL, Python, React Native Expo, CSS
+              </p>
+            </div>
+            <div className="p-4 bg-gray-50 rounded-lg shadow hover:shadow-lg transition-shadow">
+              <h3 className="text-xl font-medium">Rental Management System</h3>
+              <Image
+                src="/logos/logo3.png"
+                alt="Rental Management System Logo"
+                width={50}
+                height={50}
+                className="inline-block mr-2"
+                title="A console-based rental management system developed using C# and SQL. Allows users to track available rooms, view renter details, and calculate rental costs. Designed for small-scale boarding house or apartment monitoring."
+              />
+              <p className="text-gray-600 mt-2">
+                Technologies: C#, SQL, Console App
+              </p>
             </div>
           </div>
         </div>
