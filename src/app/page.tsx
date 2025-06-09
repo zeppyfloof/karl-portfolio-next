@@ -119,6 +119,7 @@ export default function Home() {
               <div className="flex flex-wrap gap-2 justify-center">
                 <span className="inline-block bg-green-500 text-white text-xs font-medium px-2.5 py-0.5 rounded">C#</span>
                 <span className="inline-block bg-green-500 text-white text-xs font-medium px-2.5 py-0.5 rounded">PHP</span>
+                <span className="inline-block bg-green-500 text-white text-xs font-medium px-2.5 py-0.5 rounded">json</span>
               </div>
             </div>
           </div>
