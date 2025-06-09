@@ -88,14 +88,14 @@ export default function Home() {
               <span className="font-medium">Yahoo:</span>
               <a href="mailto:estiponakarl@yahoo.com" className="text-blue-600 hover:underline">estiponakarl@yahoo.com</a>
               <a href="https://mail.yahoo.com/" target="_blank" rel="noopener noreferrer">
-                <Image src="/logos/yahoo.png" alt="Yahoo" width={24} height={24} />
+                <Image src="/logos/yahoo.png" alt="yahoo" width={24} height={24} />
               </a>
             </p>
             <p className="flex items-center space-x-2">
               <span className="font-medium">GitHub:</span>
               <a href="https://github.com/zeppyfloof" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">zeppyfloof</a>
               <a href="https://github.com/zeppyfloof" target="_blank" rel="noopener noreferrer">
-                <Image src="/logos/github.png" alt="GitHub" width={24} height={24} />
+                <Image src="/logos/github.png" alt="github" width={24} height={24} />
               </a>
             </p>
           </div>
