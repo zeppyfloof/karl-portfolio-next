@@ -107,7 +107,7 @@ export default function Home() {
             <div className="bg-gradient-to-br from-green-500 to-teal-600 p-6 rounded-lg shadow-md border border-gray-200 flex flex-col items-center text-white animate-fade-in hover:scale-105 transition-transform duration-300">
               <h3 className="text-xl font-bold mb-2 text-center">ManPro Biometrics</h3>
               <Image
-                src="/logos/manpro.png"
+                src="/logos/logo4.png"
                 alt="ManPro Biometrics Logo"
                 width={60}
                 height={60}
