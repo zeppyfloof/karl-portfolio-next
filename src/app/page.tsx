@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react';
 import Image from 'next/image';
+import '../app/globals.css'; // Import the CSS file
 
 export default function Home() {
   useEffect(() => {
@@ -65,58 +66,42 @@ export default function Home() {
         <div className="bg-white p-6 rounded-lg shadow-md">
           <h2 className="text-2xl font-semibold mb-6">Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center">
-            <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-              <h3 className="text-xl font-bold mb-2">MediFind</h3>
+            <div className="bg-gradient-to-br from-indigo-500 to-purple-600 p-6 rounded-lg shadow-md border border-gray-200 flex flex-col items-center text-white animate-fade-in hover:scale-105 transition-transform duration-300">
+              <h3 className="text-xl font-bold mb-2 text-center">MediFind</h3>
               <Image
                 src="/logos/logo2.png"
                 alt="MediFind Logo"
                 width={60}
                 height={60}
-                className="mb-4"
+                className="mb-4 rounded-full" // Smooth corners with rounded-full
               />
-              <p className="text-gray-600 mb-4">
+              <p className="text-white mb-4 text-center">
                 A smart app that locates nearby pharmacies and checks medicine prices.
               </p>
-              <div className="flex flex-wrap gap-2">
-                <span className="inline-block bg-gray-200 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">
-                  JavaScript
-                </span>
-                <span className="inline-block bg-gray-200 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">
-                  SQL
-                </span>
-                <span className="inline-block bg-gray-200 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">
-                  Python
-                </span>
-                <span className="inline-block bg-gray-200 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">
-                  React Native Expo
-                </span>
-                <span className="inline-block bg-gray-200 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">
-                  CSS
-                </span>
+              <div className="flex flex-wrap gap-2 justify-center">
+                <span className="inline-block bg-green-500 text-white text-xs font-medium px-2.5 py-0.5 rounded">JavaScript</span>
+                <span className="inline-block bg-green-500 text-white text-xs font-medium px-2.5 py-0.5 rounded">SQL</span>
+                <span className="inline-block bg-green-500 text-white text-xs font-medium px-2.5 py-0.5 rounded">Python</span>
+                <span className="inline-block bg-green-500 text-white text-xs font-medium px-2.5 py-0.5 rounded">React Native Expo</span>
+                <span className="inline-block bg-green-500 text-white text-xs font-medium px-2.5 py-0.5 rounded">CSS</span>
               </div>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-              <h3 className="text-xl font-bold mb-2">Rental Management System</h3>
+            <div className="bg-gradient-to-br from-blue-500 to-indigo-600 p-6 rounded-lg shadow-md border border-gray-200 flex flex-col items-center text-white animate-fade-in hover:scale-105 transition-transform duration-300">
+              <h3 className="text-xl font-bold mb-2 text-center">Rental Management System</h3>
               <Image
                 src="/logos/logo3.png"
                 alt="Rental Management System Logo"
                 width={60}
                 height={60}
-                className="mb-4"
+                className="mb-4 rounded-full" // Smooth corners with rounded-full
               />
-              <p className="text-gray-600 mb-4">
+              <p className="text-white mb-4 text-center">
                 A console-based rental management system for small-scale boarding house or apartment monitoring.
               </p>
-              <div className="flex flex-wrap gap-2">
-                <span className="inline-block bg-gray-200 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">
-                  C#
-                </span>
-                <span className="inline-block bg-gray-200 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">
-                  SQL
-                </span>
-                <span className="inline-block bg-gray-200 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">
-                  Console App
-                </span>
+              <div className="flex flex-wrap gap-2 justify-center">
+                <span className="inline-block bg-green-500 text-white text-xs font-medium px-2.5 py-0.5 rounded">C#</span>
+                <span className="inline-block bg-green-500 text-white text-xs font-medium px-2.5 py-0.5 rounded">SQL</span>
+                <span className="inline-block bg-green-500 text-white text-xs font-medium px-2.5 py-0.5 rounded">Console App</span>
               </div>
             </div>
           </div>
