@@ -32,7 +32,7 @@ export default function Home() {
       {/* Header */}
       <header className="bg-gray-900 text-white p-6 text-center relative">
         <Image
-          src="/profile2.jpg"
+          src="/profile2.JPG"
           alt="Karl Joseph Estipona"
           width={200} // Increased to zoom in
           height={200} // Increased to zoom in
