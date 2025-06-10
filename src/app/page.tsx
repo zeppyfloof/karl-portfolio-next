@@ -32,7 +32,7 @@ export default function Home() {
       {/* Header */}
       <header className="bg-gray-900 text-white p-6 text-center relative">
         <Image
-          src="/profile.jpg"
+          src="/profile.png"
           alt="Karl Joseph Estipona"
           width={120}
           height={120}
