@@ -59,7 +59,7 @@ export default function Home() {
         <div className="bg-white p-6 rounded-lg shadow-md">
           <h2 className="text-2xl font-semibold mb-4">About Me</h2>
           <p className="text-gray-700 leading-relaxed">
-            Hi! I am Karl Joseph, a back-end developer with experience in React.js, Next.js, Tailwind CSS, and C# enthusiast. I enjoy building responsive and user-friendly websites, with a focus on innovative solutions like my MediFind project.
+            Hi! I am Karl Joseph, a back-end developer with experience in React.js, Next.js, Tailwind CSS, C#, and C++. I enjoy building responsive and user-friendly websites, with a focus on innovative solutions like my MediFind project.
           </p>
         </div>
       </section>
@@ -182,11 +182,12 @@ export default function Home() {
           </p>
           <div className="flex justify-center">
             <a
-              href="./public/resume.pdf"
-              download="resume.pdf"
+              href="https://drive.google.com/file/d/1lTr5yCgO_c4Cgiphz2DW1zx_f7vEye8P/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-indigo-600 text-white font-medium py-2 px-4 rounded-lg hover:bg-indigo-700 transition-colors duration-300"
             >
-              Download Resume
+              View Resume
             </a>
           </div>
         </div>
