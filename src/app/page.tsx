@@ -40,8 +40,8 @@ export default function Home() {
         />
         <h1 className="text-4xl font-bold mt-4">Karl Joseph Estipona</h1>
         <p className="mt-2 text-lg">Back-End Developer & Designer</p>
-        <nav className="absolute top-4 right-4">
-          <ul className="flex space-x-4">
+        <nav className="mt-4">
+          <ul className="flex justify-center space-x-4">
             <li><a href="#about" className="hover:text-indigo-300">About</a></li>
             <li><a href="#projects" className="hover:text-indigo-300">Projects</a></li>
             <li><a href="#skills" className="hover:text-indigo-300">Skills</a></li>
@@ -73,7 +73,7 @@ export default function Home() {
                 alt="MediFind Logo"
                 width={60}
                 height={60}
-                className="mb-4 rounded-full" // Smooth corners with rounded-full
+                className="mb-4 rounded-full"
               />
               <p className="text-white mb-4 text-center">
                 A smart app that locates nearby pharmacies and checks medicine prices.
@@ -93,7 +93,7 @@ export default function Home() {
                 alt="Rental Management System Logo"
                 width={60}
                 height={60}
-                className="mb-4 rounded-full" // Smooth corners with rounded-full
+                className="mb-4 rounded-full"
               />
               <p className="text-white mb-4 text-center">
                 A console-based rental management system for small-scale boarding house or apartment monitoring.
@@ -101,6 +101,24 @@ export default function Home() {
               <div className="flex flex-wrap gap-2 justify-center">
                 <span className="inline-block bg-green-500 text-white text-xs font-medium px-2.5 py-0.5 rounded">C#</span>
                 <span className="inline-block bg-green-500 text-white text-xs font-medium px-2.5 py-0.5 rounded">SQL</span>
+                <span className="inline-block bg-green-500 text-white text-xs font-medium px-2.5 py-0.5 rounded">Console App</span>
+              </div>
+            </div>
+            <div className="bg-gradient-to-br from-teal-500 to-cyan-600 p-6 rounded-lg shadow-md border border-gray-200 flex flex-col items-center text-white animate-fade-in hover:scale-105 transition-transform duration-300">
+              <h3 className="text-xl font-bold mb-2 text-center">ManPro Biometrics</h3>
+              <Image
+                src="/logos/logo4.png"
+                alt="ManPro Biometrics Logo"
+                width={60}
+                height={60}
+                className="mb-4 rounded-full"
+              />
+              <p className="text-white mb-4 text-center">
+                A console app that stores and controls employee's login attendance.
+              </p>
+              <div className="flex flex-wrap gap-2 justify-center">
+                <span className="inline-block bg-green-500 text-white text-xs font-medium px-2.5 py-0.5 rounded">C#</span>
+                <span className="inline-block bg-green-500 text-white text-xs font-medium px-2.5 py-0.5 rounded">PHP</span>
                 <span className="inline-block bg-green-500 text-white text-xs font-medium px-2.5 py-0.5 rounded">Console App</span>
               </div>
             </div>
@@ -120,12 +138,13 @@ export default function Home() {
             <li>HTML/CSS</li>
             <li>C#</li>
             <li>C++</li>
+            <li>PHP</li>
           </ul>
         </div>
       </section>
 
       {/* Certificates Section */}
-      <section id="certificates" className="py-12 px-6 max-w-4xl mx-auto">
+      <section id="certificates" className="py-12 px-6 Bao max-w-4xl mx-auto">
         <div className="bg-white p-6 rounded-lg shadow-md">
           <h2 className="text-2xl font-semibold mb-4">Certificates</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
