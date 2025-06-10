@@ -34,13 +34,13 @@ export default function Home() {
         <Image
           src="/profile.jpg"
           alt="Karl Joseph Estipona"
-          width={200} // Increased to zoom in
-          height={200} // Increased to zoom in
-          className="mx-auto rounded-full border-4 border-white shadow-lg object-cover" // object-cover to crop and center
+          width={120}
+          height={120}
+          className="mx-auto rounded-full border-4 border-white shadow-lg object-cover"
         />
         <h1 className="text-4xl font-bold mt-4">Karl Joseph Estipona</h1>
-        <p className="mt-2 text-lg">Web Developer & Designer</p>
-        <nav className="mt-6">
+        <p className="mt-2 text-lg">Back-End Developer & Designer</p>
+        <nav className="mt-4">
           <ul className="flex justify-center space-x-4">
             <li><a href="#about" className="hover:text-indigo-300">About</a></li>
             <li><a href="#projects" className="hover:text-indigo-300">Projects</a></li>
@@ -56,7 +56,7 @@ export default function Home() {
         <div className="bg-white p-6 rounded-lg shadow-md">
           <h2 className="text-2xl font-semibold mb-4">About Me</h2>
           <p className="text-gray-700 leading-relaxed">
-            Hi! I&apos;m Karl Joseph, a web developer with experience in React.js, Next.js, Tailwind CSS and C# enthusiast. I enjoy building responsive and user-friendly websites, with a focus on innovative solutions like my MediFind project.
+            Hi! I am Karl Joseph, a back-end developer with experience in React.js, Next.js, Tailwind CSS, and C# enthusiast. I enjoy building responsive and user-friendly websites, with a focus on innovative solutions like my MediFind project.
           </p>
         </div>
       </section>
@@ -65,7 +65,7 @@ export default function Home() {
       <section id="projects" className="py-12 px-6 max-w-4xl mx-auto">
         <div className="bg-white p-6 rounded-lg shadow-md">
           <h2 className="text-2xl font-semibold mb-6">Projects</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 justify-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center">
             <div className="bg-gradient-to-br from-indigo-500 to-purple-600 p-6 rounded-lg shadow-md border border-gray-200 flex flex-col items-center text-white animate-fade-in hover:scale-105 transition-transform duration-300">
               <h3 className="text-xl font-bold mb-2 text-center">MediFind</h3>
               <Image
@@ -73,7 +73,7 @@ export default function Home() {
                 alt="MediFind Logo"
                 width={60}
                 height={60}
-                className="mb-4 rounded-full" // Smooth corners with rounded-full
+                className="mb-4 rounded-full"
               />
               <p className="text-white mb-4 text-center">
                 A smart app that locates nearby pharmacies and checks medicine prices.
@@ -93,7 +93,7 @@ export default function Home() {
                 alt="Rental Management System Logo"
                 width={60}
                 height={60}
-                className="mb-4 rounded-full" // Smooth corners with rounded-full
+                className="mb-4 rounded-full"
               />
               <p className="text-white mb-4 text-center">
                 A console-based rental management system for small-scale boarding house or apartment monitoring.
@@ -104,7 +104,7 @@ export default function Home() {
                 <span className="inline-block bg-green-500 text-white text-xs font-medium px-2.5 py-0.5 rounded">Console App</span>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-green-500 to-teal-600 p-6 rounded-lg shadow-md border border-gray-200 flex flex-col items-center text-white animate-fade-in hover:scale-105 transition-transform duration-300">
+            <div className="bg-gradient-to-br from-teal-500 to-cyan-600 p-6 rounded-lg shadow-md border border-gray-200 flex flex-col items-center text-white animate-fade-in hover:scale-105 transition-transform duration-300">
               <h3 className="text-xl font-bold mb-2 text-center">ManPro Biometrics</h3>
               <Image
                 src="/logos/logo4.png"
@@ -114,11 +114,12 @@ export default function Home() {
                 className="mb-4 rounded-full"
               />
               <p className="text-white mb-4 text-center">
-                A console app that stores and pushes employee&apos;s login attendance with the use of biometric device.
+                A console app that stores and controls employees login attendance.
               </p>
               <div className="flex flex-wrap gap-2 justify-center">
                 <span className="inline-block bg-green-500 text-white text-xs font-medium px-2.5 py-0.5 rounded">C#</span>
                 <span className="inline-block bg-green-500 text-white text-xs font-medium px-2.5 py-0.5 rounded">PHP</span>
+                <span className="inline-block bg-green-500 text-white text-xs font-medium px-2.5 py-0.5 rounded">Console App</span>
               </div>
             </div>
           </div>
@@ -128,7 +129,7 @@ export default function Home() {
       {/* Skills Section */}
       <section id="skills" className="py-12 px-6 max-w-4xl mx-auto">
         <div className="bg-white p-6 rounded-lg shadow-md">
-          <h2 className="text-2xl font-semibold mb-4">Skills</h2>
+          <h2 className="text-2xl font-semibold mb-4">Languages</h2>
           <ul className="list-disc list-inside text-gray-700 space-y-2">
             <li>React.js</li>
             <li>Next.js</li>
@@ -136,6 +137,8 @@ export default function Home() {
             <li>JavaScript</li>
             <li>HTML/CSS</li>
             <li>C#</li>
+            <li>C++</li>
+            <li>PHP</li>
           </ul>
         </div>
       </section>
@@ -146,25 +149,22 @@ export default function Home() {
           <h2 className="text-2xl font-semibold mb-4">Certificates</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="p-4 bg-gray-50 rounded-lg shadow hover:shadow-lg transition-shadow">
-              <Image src="/certificates/1.png" alt="Certificate 1" width={300} height={225} className="mx-auto" />
+              <Image src="/certificates/1.png" alt="Certificate 1" width={200} height={150} className="mx-auto" />
             </div>
             <div className="p-4 bg-gray-50 rounded-lg shadow hover:shadow-lg transition-shadow">
-              <Image src="/certificates/2.png" alt="Certificate 2" width={300} height={225} className="mx-auto" />
+              <Image src="/certificates/2.png" alt="Certificate 2" width={200} height={150} className="mx-auto" />
             </div>
             <div className="p-4 bg-gray-50 rounded-lg shadow hover:shadow-lg transition-shadow">
-              <Image src="/certificates/3.png" alt="Certificate 3" width={300} height={225} className="mx-auto" />
+              <Image src="/certificates/3.png" alt="Certificate 3" width={200} height={150} className="mx-auto" />
             </div>
             <div className="p-4 bg-gray-50 rounded-lg shadow hover:shadow-lg transition-shadow">
-              <Image src="/certificates/4.png" alt="Certificate 4" width={300} height={225} className="mx-auto" />
+              <Image src="/certificates/4.png" alt="Certificate 4" width={200} height={150} className="mx-auto" />
             </div>
             <div className="p-4 bg-gray-50 rounded-lg shadow hover:shadow-lg transition-shadow">
-              <Image src="/certificates/5.png" alt="Certificate 5" width={300} height={225} className="mx-auto" />
+              <Image src="/certificates/5.png" alt="Certificate 5" width={200} height={150} className="mx-auto" />
             </div>
             <div className="p-4 bg-gray-50 rounded-lg shadow hover:shadow-lg transition-shadow">
-              <Image src="/certificates/6.png" alt="Certificate 6" width={300} height={225} className="mx-auto" />
-            </div>
-            <div className="p-4 bg-gray-50 rounded-lg shadow hover:shadow-lg transition-shadow">
-              <Image src="/certificates/7.png" alt="Certificate 7" width={300} height={225} className="mx-auto" />
+              <Image src="/certificates/6.png" alt="Certificate 6" width={200} height={150} className="mx-auto" />
             </div>
           </div>
         </div>
