@@ -31,13 +31,15 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-br from-gray-100 via-purple-200 to-indigo-200 text-gray-800 font-sans">
       {/* Header */}
       <header className="bg-gray-900 text-white p-6 text-center relative">
-        <Image
-          src="/profile.png"
-          alt="Karl Joseph Estipona"
-          width={120}
-          height={120}
-          className="mx-auto rounded-full border-4 border-white shadow-lg object-cover"
-        />
+        <div className="relative inline-block w-[360px] h-[360px] overflow-hidden rounded-full">
+          <Image
+            src="/profile2.JPG"
+            alt="Karl Joseph Estipona"
+            width={360}
+            height={360}
+            className="rounded-full border-4 border-white shadow-lg object-cover scale-110"
+          />
+        </div>
         <h1 className="text-4xl font-bold mt-4">Karl Joseph Estipona</h1>
         <p className="mt-2 text-lg">Back-End Developer & Designer</p>
         <nav className="mt-4">
@@ -46,6 +48,7 @@ export default function Home() {
             <li><a href="#projects" className="hover:text-indigo-300">Projects</a></li>
             <li><a href="#skills" className="hover:text-indigo-300">Skills</a></li>
             <li><a href="#certificates" className="hover:text-indigo-300">Certificates</a></li>
+            <li><a href="#resume" className="hover:text-indigo-300">Resume</a></li>
             <li><a href="#contact" className="hover:text-indigo-300">Contact</a></li>
           </ul>
         </nav>
@@ -65,7 +68,7 @@ export default function Home() {
       <section id="projects" className="py-12 px-6 max-w-4xl mx-auto">
         <div className="bg-white p-6 rounded-lg shadow-md">
           <h2 className="text-2xl font-semibold mb-6">Projects</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center">
+          <div className="grid grid-cols-1 gap-6 justify-center">
             <div className="bg-gradient-to-br from-indigo-500 to-purple-600 p-6 rounded-lg shadow-md border border-gray-200 flex flex-col items-center text-white animate-fade-in hover:scale-105 transition-transform duration-300">
               <h3 className="text-xl font-bold mb-2 text-center">MediFind</h3>
               <Image
@@ -166,6 +169,25 @@ export default function Home() {
             <div className="p-4 bg-gray-50 rounded-lg shadow hover:shadow-lg transition-shadow">
               <Image src="/certificates/6.png" alt="Certificate 6" width={200} height={150} className="mx-auto" />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Resume Section */}
+      <section id="resume" className="py-12 px-6 max-w-4xl mx-auto">
+        <div className="bg-white p-6 rounded-lg shadow-md">
+          <h2 className="text-2xl font-semibold mb-4">Resume</h2>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            View or download my resume to learn more about my professional experience and qualifications.
+          </p>
+          <div className="flex justify-center">
+            <a
+              href="/resume/resume.pdf"
+              download="Karl_Joseph_Estipona_Resume.pdf"
+              className="inline-block bg-indigo-600 text-white font-medium py-2 px-4 rounded-lg hover:bg-indigo-700 transition-colors duration-300"
+            >
+              Download Resume
+            </a>
           </div>
         </div>
       </section>
