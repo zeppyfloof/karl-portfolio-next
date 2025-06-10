@@ -182,8 +182,8 @@ export default function Home() {
           </p>
           <div className="flex justify-center">
             <a
-              href="/resume/resume.pdf"
-              download="Karl_Joseph_Estipona_Resume.pdf"
+              href="./public/resume.pdf"
+              download="resume.pdf"
               className="inline-block bg-indigo-600 text-white font-medium py-2 px-4 rounded-lg hover:bg-indigo-700 transition-colors duration-300"
             >
               Download Resume
