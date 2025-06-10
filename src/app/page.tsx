@@ -55,9 +55,9 @@ export default function Home() {
       <section id="about" className="py-12 px-6 max-w-4xl mx-auto">
         <div className="bg-white p-6 rounded-lg shadow-md">
           <h2 className="text-2xl font-semibold mb-4">About Me</h2>
-            <p className="text-gray-700 leading-relaxed">
-             Hi! I am Karl Joseph, a back-end developer with experience in React.js, Next.js, Tailwind CSS, and C# enthusiast. I enjoy building responsive and user-friendly websites, with a focus on innovative solutions like my MediFind project.
-            </p>
+          <p className="text-gray-700 leading-relaxed">
+            Hi! I am Karl Joseph, a back-end developer with experience in React.js, Next.js, Tailwind CSS, and C# enthusiast. I enjoy building responsive and user-friendly websites, with a focus on innovative solutions like my MediFind project.
+          </p>
         </div>
       </section>
 
@@ -114,7 +114,7 @@ export default function Home() {
                 className="mb-4 rounded-full"
               />
               <p className="text-white mb-4 text-center">
-                A console app that stores and controls employee's login attendance.
+                A console app that stores and controls employees login attendance.
               </p>
               <div className="flex flex-wrap gap-2 justify-center">
                 <span className="inline-block bg-green-500 text-white text-xs font-medium px-2.5 py-0.5 rounded">C#</span>
@@ -144,7 +144,7 @@ export default function Home() {
       </section>
 
       {/* Certificates Section */}
-      <section id="certificates" className="py-12 px-6 Bao max-w-4xl mx-auto">
+      <section id="certificates" className="py-12 px-6 max-w-4xl mx-auto">
         <div className="bg-white p-6 rounded-lg shadow-md">
           <h2 className="text-2xl font-semibold mb-4">Certificates</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
